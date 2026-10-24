@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0753a5">
+  <title>Activa Salud Ocupacional | Activa Salud Ocupacional</title>
+  <meta name="description" content="Asesoría, capacitación y acompañamiento en Seguridad y Salud en el Trabajo. Activa Salud Ocupacional, Arauca, Colombia.">
+  <style>
+    :root{--green:#0753a5;--green2:#69b92e;--mint:#f0f7e8;--ink:#25354b;--muted:#66717d;--white:#fff;--line:#dbe5ee;--gold:#d9f2b5}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+    a{color:inherit}
+    .wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:5}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;color:var(--green);letter-spacing:.02em}.brand img{display:block;width:190px;max-width:42vw;height:auto;object-fit:contain}
+    .logo{display:grid;place-items:center;width:42px;height:42px;background:var(--green);color:#fff;border-radius:8px;font-size:22px}
+    nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+    nav a{text-decoration:none;color:#35504d;font-size:14px;font-weight:650}
+    nav a:hover{color:var(--green2)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;background:var(--green);color:white;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:750;border:0;transition:none}
+    .btn:hover{background:var(--green2);}
+    .btn.light{background:white;color:var(--green);border:1px solid var(--line)}
+    .hero{background:linear-gradient(115deg,rgba(3,54,119,.91),rgba(35,129,68,.78)),url('https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=2000&q=85') center/cover;color:#fff;padding:72px 0}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:45px;align-items:center}
+    .eyebrow{display:inline-block;color:#dff4c8;font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:12px}
+    h1{font-size:clamp(40px,6vw,66px);line-height:1.04;letter-spacing:0;margin:18px 0}
+    .hero p{font-size:18px;color:#e6f4f1;max-width:620px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+    .hero .btn{background:var(--gold);color:#173e72}.hero .btn.light{background:transparent;color:white;border-color:#ffffff80}
+    .hero-card{padding:28px;border:1px solid #ffffff3d;background:#ffffff12;border-radius:10px;}
+    .hero-card .big{font-size:46px}.hero-card h3{font-size:23px;margin:10px 0}.hero-card p{font-size:15px}
+    section{padding:55px 0}
+    .section-head{max-width:700px;margin-bottom:32px}
+    .kicker{color:var(--green2);text-transform:uppercase;font-size:12px;font-weight:850;letter-spacing:.13em}
+    h2{font-size:clamp(30px,4vw,43px);line-height:1.12;letter-spacing:0;margin:9px 0 14px}
+    .lead{color:var(--muted);font-size:17px}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+    .panel{padding:28px;border:1px solid var(--line);border-radius:12px;background:#fff}
+    .panel.tint{background:var(--mint);border-color:transparent}
+    .panel h3{margin:0 0 9px;font-size:21px;color:var(--green)}
+    .values{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+    .chip{background:var(--mint);border:1px solid #d3eae4;border-radius:999px;padding:9px 13px;font-size:14px;font-weight:700;color:var(--green)}
+    .services{background:#f7fbfa}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+    .service{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;box-shadow:none}
+    .service-icon{width:48px;height:48px;display:grid;place-items:center;background:var(--mint);border-radius:10px;font-size:23px}
+    .service h3{margin:16px 0 8px;color:var(--green);font-size:19px;line-height:1.25}
+    .service p{margin:0;color:var(--muted);font-size:15px}
+    .callout{background:var(--green);color:white;border-radius:10px;padding:36px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .callout h2{margin-top:0}.callout p{color:#d8efeb;margin-bottom:0;max-width:650px}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .contact-item{display:flex;gap:13px;margin:20px 0;align-items:flex-start}
+    .contact-item .service-icon{flex:0 0 46px}
+    .contact-item small{display:block;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:11px}
+    .contact-item a{text-decoration:none;font-weight:750;color:var(--green)}
+    footer{background:#073d78;color:#e4f0ff;padding:27px 0;font-size:14px}
+    footer .foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+    @media(max-width:800px){.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero{padding:72px 0}.hero-card{max-width:520px}.cards{grid-template-columns:repeat(2,1fr)}nav{gap:10px}nav a{font-size:12px}}
+    @media(max-width:560px){.brand img{width:170px;max-width:80vw}.nav{align-items:flex-start;flex-direction:column}.hero{padding:58px 0}.hero-card{padding:22px}section{padding:56px 0}.cards{grid-template-columns:1fr}.callout{padding:26px;align-items:flex-start;flex-direction:column}.brand{font-size:14px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inicio" aria-label="Activa Salud Ocupacional, inicio"><img src="logo-activa.png" alt="Activa Salud Ocupacional"></a>
+    <nav aria-label="Navegación principal">
+      <a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#valores">Valores</a><a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero" id="inicio">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Seguridad · Prevención · Bienestar</span>
+        <h1>Activa Salud Ocupacional</h1>
+        <p>Activa, tu seguridad. Acompañamos a las organizaciones en la prevención de riesgos laborales y la construcción de espacios de trabajo más seguros.</p>
+        <div class="hero-actions"><a class="btn" href="#servicios">Ver servicios</a><a class="btn light" href="#contacto">Contáctanos</a></div>
+      </div>
+      <aside class="hero-card">
+        <div class="big">🦺</div><h3>Cuidarnos también es parte del trabajo</h3>
+        <p>Asesoría, capacitación y acompañamiento en Seguridad y Salud en el Trabajo.</p>
+        <strong>¡Certificamos con Calidad!</strong>
+      </aside>
+    </div>
+  </section>
+  <section id="nosotros">
+    <div class="wrap">
+      <div class="section-head"><span class="kicker">Conócenos</span><h2>La seguridad de las personas es lo primero.</h2><p class="lead">Trabajamos por espacios laborales más seguros, saludables y conscientes de la importancia de prevenir los riesgos.</p></div>
+      <div class="about-grid" style="margin-bottom:26px">
+        <article class="panel tint"><h3>¿Quiénes somos?</h3><p>Somos Activa Salud Ocupacional, una iniciativa de emprendimiento creada por estudiantes del Instituto La Frontera que ponen en práctica sus conocimientos en Seguridad y Salud en el Trabajo. Nos orientamos a brindar asesoría, capacitación y acompañamiento para promover la prevención de riesgos laborales, el bienestar de los trabajadores y una cultura de seguridad.</p></article>
+        <article class="panel"><h3>¿Por qué nació Activa?</h3><p>Activa nació del deseo de convertir lo aprendido en nuestra formación en acciones útiles para las empresas y sus trabajadores. Identificamos la importancia de prevenir accidentes, fortalecer los hábitos seguros y acompañar a las organizaciones en el cuidado de su talento humano. Por eso queremos aportar soluciones responsables y de calidad que ayuden a construir ambientes de trabajo más seguros.</p></article>
+      </div>
+      <div class="about-grid">
+        <article class="panel tint"><h3>Nuestra misión</h3><p>Brindar asesoría integral, consultoría, capacitación y acompañamiento en Seguridad y Salud en el Trabajo, contribuyendo a prevenir riesgos laborales, apoyar el cumplimiento de requisitos legales aplicables y fortalecer una cultura de seguridad y bienestar.</p></article>
+        <article class="panel"><h3>Nuestra visión</h3><p>Ser reconocidos por ofrecer soluciones innovadoras para la protección del capital humano, el bienestar de los trabajadores y el crecimiento sostenible de nuestros clientes, con proyección de liderazgo regional para el año 2030.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="services" id="servicios">
+    <div class="wrap">
+      <div class="section-head"><span class="kicker">Lo que hacemos</span><h2>Servicios para trabajar con más seguridad.</h2><p class="lead">Soluciones orientadas a la prevención, el acompañamiento y la mejora continua de la seguridad y salud en el trabajo.</p></div>
+      <div class="cards">
+        <article class="service"><div class="service-icon">🪜</div><h3>Trabajo seguro en alturas</h3><p>Prevención de caídas, identificación de peligros, procedimientos seguros, permisos, listas de chequeo, revisión de equipos y planes de rescate.</p></article>
+        <article class="service"><div class="service-icon">📋</div><h3>Sistema de Gestión SG-SST</h3><p>Apoyo en diseño e implementación, documentación, registros, indicadores y acompañamiento en auditorías.</p></article>
+        <article class="service"><div class="service-icon">🎓</div><h3>Asesoría y capacitación</h3><p>Formación para fortalecer conocimientos y prácticas seguras en los lugares de trabajo.</p></article>
+        <article class="service"><div class="service-icon">🚨</div><h3>Planes de emergencia</h3><p>Apoyo en brigadas, primeros auxilios, uso de extintores, evacuación y simulacros.</p></article>
+        <article class="service"><div class="service-icon">⚡</div><h3>Seguridad eléctrica</h3><p>Procedimientos, matrices de elementos de protección personal, permisos y capacitación para prevenir riesgos eléctricos.</p></article>
+        <article class="service"><div class="service-icon">⚙️</div><h3>Sistemas de ingeniería</h3><p>Apoyo en soluciones de ingeniería orientadas a la prevención y el control de riesgos laborales.</p></article>
+      </div>
+    </div>
+  </section>
+  <section id="valores">
+    <div class="wrap about-grid">
+      <div><span class="kicker">Lo que nos guía</span><h2>Valores que se reflejan en nuestro trabajo.</h2><p class="lead">Actuamos con compromiso por las personas, la prevención y la calidad.</p></div>
+      <div class="panel"><h3>Nuestros valores corporativos</h3><div class="values"><span class="chip">Responsabilidad</span><span class="chip">Seguridad</span><span class="chip">Trabajo en equipo</span><span class="chip">Innovación</span><span class="chip">Compromiso ambiental</span><span class="chip">Calidad y excelencia</span><span class="chip">Respeto</span><span class="chip">Honestidad</span><span class="chip">Ética</span><span class="chip">Prevención</span><span class="chip">Confianza</span><span class="chip">Responsabilidad social</span></div></div>
+    </div>
+  </section>
+  <section id="contacto" class="services">
+    <div class="wrap">
+      <div class="section-head"><span class="kicker">Hablemos</span><h2>Contáctanos, estamos para ti</h2><p class="lead">Comunícate con Activa Salud Ocupacional para consultar por nuestros servicios.</p></div>
+      <div class="contact-grid">
+        <div class="panel">
+          <div class="contact-item"><div class="service-icon">📞</div><div><small>Teléfonos</small><a href="tel:+573102161448">+57 310 216 1448</a><br><a href="tel:+573246612503">+57 324 661 2503</a></div></div>
+          <div class="contact-item"><div class="service-icon">📍</div><div><small>Dirección</small><strong>Cra. 21 N.° 26-57, Arauca, Arauca, Colombia</strong></div></div>
+          <div class="contact-item"><div class="service-icon">✉️</div><div><small>Correo electrónico</small><a href="mailto:leidybemudez1303@activaocupacional.com">leidybemudez1303@activaocupacional.com</a></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
